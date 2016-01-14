@@ -1,4 +1,7 @@
 angular.module('myWeb', [])
+    .controller('MainController', function($scope) {
+        
+    });
     
     .config(function($routeProvider, $locationProvider) {
 
