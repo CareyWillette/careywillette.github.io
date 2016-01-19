@@ -114,10 +114,10 @@ h1, h2, h3, h4, h5, h6, p {
 
 .but {
     display: inline-block;
-    font-family: 'Lato', Helvetica, Arial, sans-serif;   
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-size: 1rem;
-    font-size: 16px;    
+    font-size: 16px;
     padding: 0 45px;
     line-height: 55px;
     background-color: #F10061;
@@ -236,7 +236,7 @@ h1, h2, h3, h4, h5, h6, p {
     -webkit-transition: opacity 0.2s 1.6s ease-out;
        -moz-transition: opacity 0.2s 1.6s ease-out;
          -o-transition: opacity 0.2s 1.6s ease-out;
-            transition: opacity 0.2s 1.6s ease-out;     
+            transition: opacity 0.2s 1.6s ease-out;
 }
 
 .menu-icon.jiji {
@@ -248,12 +248,12 @@ h1, h2, h3, h4, h5, h6, p {
     height: 2px;
     position: relative;
     display: inline-block;
-    background: #F10061;  
+    background: #F10061;
 
     -webkit-transition: background 0.4s ease-out;
        -moz-transition: background 0.4s ease-out;
          -o-transition: background 0.4s ease-out;
-            transition: background 0.4s ease-out; 
+            transition: background 0.4s ease-out;
 }
 
 .menu-icon span:before {
@@ -294,7 +294,7 @@ h1, h2, h3, h4, h5, h6, p {
        -moz-transition: background 0.2s ease-out;
          -o-transition: background 0.2s ease-out;
             transition: background 0.2s ease-out;
-    
+
     background-color: transparent;
 }
 
@@ -350,7 +350,7 @@ h1, h2, h3, h4, h5, h6, p {
     -webkit-transition: opacity 0.2s ease-out;
        -moz-transition: opacity 0.2s ease-out;
          -o-transition: opacity 0.2s ease-out;
-            transition: opacity 0.2s ease-out;    
+            transition: opacity 0.2s ease-out;
 }
 
 .menu-icon.close p:before {
@@ -363,6 +363,7 @@ h1, h2, h3, h4, h5, h6, p {
    ========================================================================== */
 
 #about,
+#drone,
 #services,
 #work,
 #contact {
@@ -372,6 +373,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .about-content h3,
+.drone-content h3,
 .services-content h3,
 .work-content h3,
 .contact-content h3,
@@ -387,6 +389,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .about-content p,
+.drone-content p,
 .services-content p,
 .work-content p,
 .contact-content p,
@@ -435,7 +438,7 @@ h1, h2, h3, h4, h5, h6, p {
     -webkit-transition: opacity 0.2s 1.2s ease-out;
        -moz-transition: opacity 0.2s 1.2s ease-out;
          -o-transition: opacity 0.2s 1.2s ease-out;
-            transition: opacity 0.2s 1.2s ease-out;    
+            transition: opacity 0.2s 1.2s ease-out;
 }
 
 .home-title h2 {
@@ -451,7 +454,7 @@ h1, h2, h3, h4, h5, h6, p {
     -webkit-transition: opacity 0.2s 1.6s ease-out;
        -moz-transition: opacity 0.2s 1.6s ease-out;
          -o-transition: opacity 0.2s 1.6s ease-out;
-            transition: opacity 0.2s 1.6s ease-out;    
+            transition: opacity 0.2s 1.6s ease-out;
 }
 
 .home-tittle a {
@@ -477,6 +480,20 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .about-content a {
+    margin-top: 90px;
+}
+}
+
+/* ==========================================================================
+   Drone
+   ========================================================================== */
+
+#drone {
+    padding-bottom: 90px;
+    background-color: #fff;
+}
+
+.drone-content a {
     margin-top: 90px;
 }
 
@@ -544,7 +561,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .work-item-inside {
     background-color: rgba(0, 0, 0, 1);
-    color: #fff;    
+    color: #fff;
     display: block;
     position: absolute;
     left: 0px;
@@ -683,9 +700,9 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 
-    /* 1. 12 Column Grid 0px - 319px 
-    ----------------------------------------------------------------------------- 
-    
+    /* 1. 12 Column Grid 0px - 319px
+    -----------------------------------------------------------------------------
+
     Span 1:    8.33333333333%
     Span 2:    16.6666666667%
     Span 3:    25.0%
@@ -698,11 +715,11 @@ h1, h2, h3, h4, h5, h6, p {
     Span 10:    83.3333333333%
     Span 11:    91.6666666667%
     Span 12:    100%
-    
+
     ----------------------------------------------------------------------------- */
 
     @media screen and (min-width: 0px) and (max-width: 319px) {
-        
+
         .row {
             margin-left:-24px;
         }
@@ -710,13 +727,13 @@ h1, h2, h3, h4, h5, h6, p {
             border-left-width:24px;
             padding:0 0px;
         }
-        
+
 
         .menu-icon {
             top: 27px;
             left: 27px;
         }
-        
+
         .home-title h1 {
             font-size: 1.6875rem;
             font-size: 27px;
@@ -729,12 +746,14 @@ h1, h2, h3, h4, h5, h6, p {
         }
 
         #about .empty,
+        #drone .empty,
         #work .empty,
         #contact .empty {
             display: none;
         }
 
         .about-title h3,
+        .drone-title h3,
         .work-title h3,
         .contact-title h3,
         .menu ul li a {
@@ -760,8 +779,8 @@ h1, h2, h3, h4, h5, h6, p {
         .social [class^="icon-"],
         .social [class*=" icon-"] {
             margin: 0 3px;
-        }    
-        
+        }
+
         .span_1 {
             width:8.33333333333%;
         }
@@ -798,7 +817,9 @@ h1, h2, h3, h4, h5, h6, p {
         .span_12,
         .home-title,
         .about-title,
+        .drone-title,
         .about-description,
+        .drone-description,
         .services-design,
         .services-frontend,
         .services-team,
@@ -813,9 +834,9 @@ h1, h2, h3, h4, h5, h6, p {
         }
     }
 
-    /* 2. 12 Column Grid 320px - 459px 
-    ----------------------------------------------------------------------------- 
-    
+    /* 2. 12 Column Grid 320px - 459px
+    -----------------------------------------------------------------------------
+
     Span 1:    8.33333333333%
     Span 2:    16.6666666667%
     Span 3:    25.0%
@@ -828,11 +849,11 @@ h1, h2, h3, h4, h5, h6, p {
     Span 10:    83.3333333333%
     Span 11:    91.6666666667%
     Span 12:    100%
-    
+
     ----------------------------------------------------------------------------- */
 
     @media screen and (min-width: 320px) and (max-width: 459px) {
-        
+
         .row {
             margin-left:-24px;
         }
@@ -840,7 +861,7 @@ h1, h2, h3, h4, h5, h6, p {
             border-left-width:24px;
             padding:0 0px;
         }
-        
+
 
         .opl {
             top: 17px;
@@ -854,7 +875,7 @@ h1, h2, h3, h4, h5, h6, p {
         .menu ul {
             padding-top: 80px;
         }
-        
+
         .menu ul li a {
             padding: 9px 0 9px 27px;
         }
@@ -871,12 +892,14 @@ h1, h2, h3, h4, h5, h6, p {
         }
 
         #about .empty,
+        #drone .empty,
         #work .empty,
         #contact .empty {
             display: none;
         }
 
         .about-title h3,
+        .drone-title h3,
         .work-title h3,
         .contact-title h3,
         .menu ul li a {
@@ -903,7 +926,7 @@ h1, h2, h3, h4, h5, h6, p {
         .social [class*=" icon-"] {
             margin: 0 3px;
         }
-        
+
         .span_1 {
             width:8.33333333333%;
         }
@@ -940,7 +963,9 @@ h1, h2, h3, h4, h5, h6, p {
         .span_12,
         .home-title,
         .about-title,
+        .drone-title,
         .about-description,
+        .drone-description,
         .services-design,
         .services-frontend,
         .services-team,
@@ -955,9 +980,9 @@ h1, h2, h3, h4, h5, h6, p {
         }
     }
 
-    /* 3. 12 Column Grid 460px - 779px 
-    ----------------------------------------------------------------------------- 
-    
+    /* 3. 12 Column Grid 460px - 779px
+    -----------------------------------------------------------------------------
+
     Span 1:    8.33333333333%
     Span 2:    16.6666666667%
     Span 3:    25.0%
@@ -970,11 +995,11 @@ h1, h2, h3, h4, h5, h6, p {
     Span 10:    83.3333333333%
     Span 11:    91.6666666667%
     Span 12:    100%
-    
+
     ----------------------------------------------------------------------------- */
 
     @media screen and (min-width: 460px) and (max-width: 779px) {
-        
+
         .row {
             margin-left:-24px;
         }
@@ -987,7 +1012,7 @@ h1, h2, h3, h4, h5, h6, p {
         .opl {
             top: 17px;
         }
-        
+
         .home-title h1 {
             font-size: 1.6875rem;
             font-size: 27px;
@@ -1000,6 +1025,7 @@ h1, h2, h3, h4, h5, h6, p {
         }
 
         .about-title h3,
+        .drone-title h3,
         .work-title h3,
         .contact-title h3,
         .menu ul li a {
@@ -1015,7 +1041,7 @@ h1, h2, h3, h4, h5, h6, p {
         .menu ul {
             padding-top: 80px;
         }
-        
+
         .menu ul li a {
             padding: 9px 0 9px 27px;
         }
@@ -1024,12 +1050,13 @@ h1, h2, h3, h4, h5, h6, p {
             font-size: 0.8125rem;
             font-size: 13px;
         }
-        
+
         .span_1 {
             width:8.33333333333%;
         }
         .span_2,
         #about .empty,
+        #drone .empty,
         #work .empty,
         #contact .empty {
             width:16.6666666667%;
@@ -1055,6 +1082,7 @@ h1, h2, h3, h4, h5, h6, p {
         }
         .span_8,
         .about-description,
+        .drone-description,
         .work-description,
         .contact-description {
             width:66.6666666667%;
@@ -1071,6 +1099,7 @@ h1, h2, h3, h4, h5, h6, p {
         .span_12,
         .home-title,
         .about-title,
+        .drone-title,
         .work-title,
         .contact-title,
         .f1 {
@@ -1079,9 +1108,9 @@ h1, h2, h3, h4, h5, h6, p {
         }
     }
 
-    /* 4. 12 Column Grid 780px - 1199px 
-    ----------------------------------------------------------------------------- 
-    
+    /* 4. 12 Column Grid 780px - 1199px
+    -----------------------------------------------------------------------------
+
     Span 1:    8.33333333333%
     Span 2:    16.6666666667%
     Span 3:    25.0%
@@ -1094,11 +1123,11 @@ h1, h2, h3, h4, h5, h6, p {
     Span 10:    83.3333333333%
     Span 11:    91.6666666667%
     Span 12:    100%
-    
+
     ----------------------------------------------------------------------------- */
 
     @media screen and (min-width: 780px) and (max-width: 1199px) {
-        
+
         .row {
             margin-left:-24px;
         }
@@ -1106,15 +1135,16 @@ h1, h2, h3, h4, h5, h6, p {
             border-left-width:24px;
             padding:0 0px;
         }
-        
-        
-        
-        
+
+
+
+
         .span_1 {
             width:8.33333333333%;
         }
         .span_2,
         #about .empty,
+        #drone .empty,
         #work .empty,
         #contact .empty {
             width:16.6666666667%;
@@ -1140,6 +1170,7 @@ h1, h2, h3, h4, h5, h6, p {
         }
         .span_8,
         .about-description,
+        .drone-description,
         .work-description,
         .contact-description {
             width:66.6666666667%;
@@ -1156,6 +1187,7 @@ h1, h2, h3, h4, h5, h6, p {
         .span_12,
         .home-title,
         .about-title,
+        .drone-title,
         .work-title,
         .contact-title,
         .f1 {
@@ -1164,9 +1196,9 @@ h1, h2, h3, h4, h5, h6, p {
         }
     }
 
-    /* 5. 12 Column Grid 1200px - Infinity 
-    ----------------------------------------------------------------------------- 
-    
+    /* 5. 12 Column Grid 1200px - Infinity
+    -----------------------------------------------------------------------------
+
     Span 1:    8.33333333333%
     Span 2:    16.6666666667%
     Span 3:    25.0%
@@ -1179,11 +1211,11 @@ h1, h2, h3, h4, h5, h6, p {
     Span 10:    83.3333333333%
     Span 11:    91.6666666667%
     Span 12:    100%
-    
+
     ----------------------------------------------------------------------------- */
 
     @media screen and (min-width: 1200px) {
-        
+
         .row {
             margin-left:-24px;
         }
@@ -1191,10 +1223,10 @@ h1, h2, h3, h4, h5, h6, p {
             border-left-width:24px;
             padding:0 0px;
         }
-        
-        
-        
-        
+
+
+
+
         .span_1 {
             width:8.33333333333%;
         }
@@ -1203,6 +1235,7 @@ h1, h2, h3, h4, h5, h6, p {
         }
         .span_3,
         #about .empty,
+        #drone .empty,
         #work .empty,
         #contact .empty {
             width:25.0%;
@@ -1219,6 +1252,7 @@ h1, h2, h3, h4, h5, h6, p {
         }
         .span_6,
         .about-description,
+        .drone-description,
         .work-description,
         .contact-description {
             width:50.0%;
@@ -1241,6 +1275,7 @@ h1, h2, h3, h4, h5, h6, p {
         .span_12,
         .home-title,
         .about-title,
+        .drone-title,
         .work-title,
         .contact-title,
         .f1 {
@@ -1248,4 +1283,3 @@ h1, h2, h3, h4, h5, h6, p {
             width:100%;
         }
     }
-
